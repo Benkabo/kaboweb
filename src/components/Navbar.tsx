@@ -3,6 +3,9 @@ function Navbar() {
     <div className="mt-3">
       <div className="flex gap-5">
         <div className="hover:cursor-pointer duration-150 hover:scale-105 hover:border-b-2 border-black ease-in-out">
+          <a href="mailto:kaboyokabenedict@gmail.com">Email me</a>
+        </div>
+        <div className="hover:cursor-pointer duration-150 hover:scale-105 hover:border-b-2 border-black ease-in-out">
           <a href="https://twitter.com/kabo_ben" target="_blank">
             Twitter
           </a>
