@@ -8,6 +8,7 @@ export default function Routes() {
     {
       path: "/",
       element: <Layout />,
+      errorElement: <NotFound />,
       children: [
         {
           index: true,
