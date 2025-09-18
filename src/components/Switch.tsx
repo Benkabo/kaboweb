@@ -1,25 +1,25 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/16/solid";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Switch() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
-  const darkModeHandler = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
+  function toggleTheme() {
+    if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
     }
-  }, [theme]);
+  }
 
   return (
     <div className="absolute bottom-5 right-5">
       <button
-        onClick={() => darkModeHandler()}
+        onClick={() => toggleTheme()}
         className="border border-black dark:border-white p-2 rounded-full"
       >
         {theme === "dark" ? (
