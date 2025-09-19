@@ -16,7 +16,8 @@ function Home() {
           <div>
             <div className="underline dark:text-white">Skills</div>
             <p className="mb-3 dark:text-white">
-              Web Development,Mobile Development,Debugging, Problem Solving
+              Web Development,Mobile Development,Debugging, Problem Solving,
+              Drone Pilot
             </p>
             <div className="underline dark:text-white">Active Toolset</div>{" "}
             <p className="mb-3 dark:text-white">
