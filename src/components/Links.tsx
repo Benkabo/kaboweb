@@ -22,7 +22,7 @@ function Links() {
         </div>
         <div className="hover:cursor-pointer duration-150 hover:scale-105 hover:border-b-2 border-black ease-in-out dark:text-white">
           <a
-            href="https://drive.google.com/file/d/16VFnQwWGjpdUIeZJH369zsD8L9piVh1U/view?usp=sharing"
+            href="https://docs.google.com/document/d/1ORc1KoXesUDtuZGi_31P_KoM47nQEaIaK98rowRFpXM/edit?usp=sharing"
             target="_blank"
           >
             CV
